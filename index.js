@@ -1,8 +1,8 @@
 const isValidGroup = (group) => {
     const set = new Set(group);
     return (
-        set.size === 9 && // унікальні
-        [...set].every((num) => num >= 1 && num <= 9) // діапазон 1-9
+        set.size === 9 && // unique
+        [...set].every((num) => num >= 1 && num <= 9) // range 1-9
     );
 };
 
